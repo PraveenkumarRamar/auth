@@ -8,6 +8,7 @@ mongoose.connect(dburl)
 
 
 
+
 router.get('/all',validate, adminGuard, async (req, res) => {
     try {
         let users = await UserModel.find();
