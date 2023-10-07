@@ -7,8 +7,8 @@ const port = process.env.PORT
 app.use(express.json())
 app.use(cors())
 
-const indexRouter = require('../auth-be/router/index')
-const userRouter = require('../auth-be/router/user')
+const indexRouter = require('./router/index')
+const userRouter = require('./router/user')
 
 app.use('/',indexRouter)
 app.use('/users',userRouter)
